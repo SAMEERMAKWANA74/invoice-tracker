@@ -17,16 +17,8 @@ A simple **Invoice Tracker** web application built with **React**. This app allo
 
 ## **Demo**
 
-![Invoice Tracker Screenshot](./6b8a20f1-e2c1-4c19-a358-1ac24232a82d.png)
-
-Live Demo: [Click here](https://invoive-tracker-sameer-makwana.vercel.app/)
+Live Demo: [Click here](https://invoice-tracker-sameer-makwana.vercel.app/)
 
 ---
 
-## **Installation**
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/SAMEERMAKWANA74/invoice-generator.git
-cd invoice-generator

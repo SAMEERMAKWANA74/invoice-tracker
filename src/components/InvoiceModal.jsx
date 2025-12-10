@@ -90,14 +90,14 @@ const InvoiceModal = ({
                 {items.map((item, i) => {
                   return (
                     <tr id={i} key={i}>
-                      <td style={{ width: "70px" }}>{item.quantity}</td>
+                      <td style={{ inline-size: "70px" }}>{item.quantity}</td>
                       <td>
                         {item.name} - {item.description}
                       </td>
-                      <td className="text-end" style={{ width: "100px" }}>
+                      <td className="text-end" style={{ inline-size: "100px" }}>
                         {currency} {item.price}
                       </td>
-                      <td className="text-end" style={{ width: "100px" }}>
+                      <td className="text-end" style={{ inline-size: "100px" }}>
                         {currency} {item.price * item.quantity}
                       </td>
                     </tr>
@@ -114,20 +114,20 @@ const InvoiceModal = ({
                 </tr>
                 <tr className="text-end">
                   <td></td>
-                  <td className="fw-bold" style={{ width: "100px" }}>
+                  <td className="fw-bold" style={{ inline-size: "100px" }}>
                     SUBTOTAL
                   </td>
-                  <td className="text-end" style={{ width: "100px" }}>
+                  <td className="text-end" style={{ inline-size: "100px" }}>
                     {currency} {subTotal}
                   </td>
                 </tr>
                 {taxAmount !== 0.0 && (
                   <tr className="text-end">
                     <td></td>
-                    <td className="fw-bold" style={{ width: "100px" }}>
+                    <td className="fw-bold" style={{ inline-size: "100px" }}>
                       TAX
                     </td>
-                    <td className="text-end" style={{ width: "100px" }}>
+                    <td className="text-end" style={{ inline-size: "100px" }}>
                       {currency} {taxAmount}
                     </td>
                   </tr>
@@ -135,20 +135,20 @@ const InvoiceModal = ({
                 {discountAmount !== 0.0 && (
                   <tr className="text-end">
                     <td></td>
-                    <td className="fw-bold" style={{ width: "100px" }}>
+                    <td className="fw-bold" style={{ inline-size: "100px" }}>
                       DISCOUNT
                     </td>
-                    <td className="text-end" style={{ width: "100px" }}>
+                    <td className="text-end" style={{ inline-size: "100px" }}>
                       {currency} {discountAmount}
                     </td>
                   </tr>
                 )}
                 <tr className="text-end">
                   <td></td>
-                  <td className="fw-bold" style={{ width: "100px" }}>
+                  <td className="fw-bold" style={{ inline-size: "100px" }}>
                     TOTAL
                   </td>
-                  <td className="text-end" style={{ width: "100px" }}>
+                  <td className="text-end" style={{ inline-size: "100px" }}>
                     {currency} {total}
                   </td>
                 </tr>
@@ -169,7 +169,7 @@ const InvoiceModal = ({
                 onClick={GenerateInvoice}
               >
                 <BiCloudDownload
-                  style={{ width: "16px", height: "16px", marginTop: "-3px" }}
+                  style={{ inline-size: "16px", block-size: "16px", margininset-block-start: "-3px" }}
                   className="me-2"
                 />
                 Download Copy
